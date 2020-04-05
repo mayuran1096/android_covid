@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgapps"
+    tools:context=".MainActivity">
+
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtdashboard"
+                android:text="CORONA REPORT"
+                android:textSize="22sp"
+                android:textColor="#FFFFFF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/txtdashboard"
+                android:text="CORONA STATICAL REPORT "
+                android:textSize="10sp"
+                android:textColor="#52BAFF"></TextView>
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/download"
+                android:layout_width="62dp"
+                android:layout_height="62dp">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+
+                android:src="@drawable/covid"
+                android:layout_width="400dp"
+                android:layout_height="200dp">
+
+            </ImageView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnGetData"-->
+<!--                android:layout_width="350dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:text="Generate Report"-->
+<!--                tools:layout_editor_absoluteX="300dp"-->
+<!--                tools:layout_editor_absoluteY="200dp" />-->
+            <ImageView
+
+                android:src="@drawable/dil"
+                android:layout_width="2500dp"
+                android:layout_height="80dp"
+                android:id="@+id/btnGetData"
+                >
+
+            </ImageView>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Number Of Total Cases :"-->
+<!--                android:textSize="22sp"/>-->
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:stretchColumns="1">
+                <TableRow>
+                    <TextView
+                        android:text="Last Update Date And Time  :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/datetime"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Number Of Total columns   :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/totalcase"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+
+                <TableRow>
+                <TextView
+                    android:text="Number Of Activecase    :"
+                    android:padding="3dip"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:id="@+id/activecase"
+                    android:text=""
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textSize="16sp"/>
+            </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Number Of New Case    :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/newcase"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Number Of Deaths    :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/deaths"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Number Of Recovered    :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/recovered"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:text="Individuals In Hospitals :"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                    <TextView
+                        android:id="@+id/invidual"
+                        android:text=""
+                        android:gravity="right"
+                        android:padding="3dip"
+                        android:textSize="16sp"/>
+                </TableRow>
+            </TableLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+
+
+
+
+
+</ScrollView>
